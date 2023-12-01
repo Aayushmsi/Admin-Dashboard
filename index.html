@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>User Management Dashboard</h1>
+
+        <div class="search-bar">
+            <label for="searchInput" class="search-icon">&#128269;</label>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+
+        <div class="user-list">
+            <h2>User List</h2>
+            <div class="table-container">
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <!-- Add more columns as needed -->
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userListBody">
+                        <!-- User list will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <!-- Pagination buttons go here -->
+            </div>
+        </div>
+
+        <div class="delete-user">
+            <button onclick="deleteSelected()">Delete Selected</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
